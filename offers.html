@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="stylemenu.css">
+</head>
+<style>
+    body{
+        background-color:#FAF3E0;
+    }
+    .our-offers{
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: url('images/offers.png');
+        background-size: 100% 100%; 
+        background-repeat: no-repeat;
+        background-position: top;
+        text-align: center;
+    }
+        @media (min-width: 800px) {
+        .our-offers{
+            background-image: url('images/offersdicktop.png');
+        }
+     
+}
+</style>
+<body>
+    <div class="nevmenu" style="position: sticky; direction: rtl;">
+   <a href="index.html"><h2  id="Changebackground-color" class="themenu" onclick="changeAllClasses('1')" style="color: aliceblue; background-color: green;">المينيو</h2></a>
+     <h2  id="Changebackground-color" class="theoffers" onclick="changeAllClasses('2')" style="color: yellow; background-color: red;">العروض</h2>
+    </div>
+
+  <div class="our-offers">
+  </div>  
+    <section class="trending-product" id="trending-product">
+      <div class="products">
+        <div class="row"  id="text-container" onclick=" changeAllContent(imageAltTextsArray[82],mealIngredientsArray[82], imageSourcesArray[82]);show_pup()">  
+    <div class="meal-image-container"><img src="images/offer2.png" alt="ناغيت + زنجر بوجبة واحدة" class="meal-image"></div>
+       
+        <div class="product-text">    
+            <h2 class="meal-name"  >عرض البرجر</h2>
+            <p>خصم<h3 style="color: red;">50%</h3> على جميع وجبات البرجر  </p>
+            </div>
+            <span class="meal-price">-</span> 
+      
+    </div>
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[83],mealIngredientsArray[83], imageSourcesArray[83]);show_pup()">  
+    <div class="meal-image-container" ><img src="images/offer1.png" alt="ناغيت + زنجر بوجبة واحدة" class="meal-image"></div>
+       
+        <div class="product-text">    
+            <h2 class="meal-name"  > عرض الاسبوع</h2>
+            <p> كولا + بطاطا + برجر لحم ب<h3 style="color: red;" >60.000</h3></p>
+           
+            </div>
+            <span class="meal-price">60.000</span> 
+      
+    </div>
+        </div>
+        </div>
+    </section>
+    <div  class="card" id = "pup-1">
+        <img id="myImage" alt="">
+        <h2 id="meal-name">hellow</h2>
+        <p id="meal-ingredients">wellcem world</p>
+        <button class="btn-close" onclick="hide_pup()">Close</button>
+      </div>
+<script src="java.js"></script>
+<script src="data.js"></script>
+
+</body>
+
+</html>

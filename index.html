@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="stylemenu.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=
+Jost:ital,wght@1,100..900&family=Kaushan+Script&family=Macondo&family
+=Shadows+Into+Light&family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+ integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body> 
+<div  class="card" id = "pup-1">
+        <img id="myImage" alt="">
+        <h2 id="meal-name">hellow</h2>
+        <p id="meal-ingredients">wellcem world</p>
+        <button class="btn-close" onclick="hide_pup()">Close</button>
+      </div>
+    <div id="topmeun" style="background-color: #111;">
+    <img src="images/Picture1.png" class="logo" id="backgroundDownmenu" height="250px"; width="250px">
+</div>
+       <div class="scrolling-container" id="main-scrolling-container"  >
+       <div class="nevmenu">
+     <h2  id="Changebackground-color" class="themenu" onclick="changeAllClasses('1')">المينيو</h2>
+     <a href="offers.html"><h2  id="Changebackground-color" class="theoffers" onclick="changeAllClasses('2')">العروض</h2></a>
+   
+        </div> 
+        <div><a href="#itemB1"><div class="image-wrapper" id="wrapper-itemB1"><img src="https://chiefeater.com/wp-content/uploads/2024/09/home_recipe_western_food_sep2024_glong_02.jpg" alt="الوجبات الغربية"></div></a><h5>الوجبات الغربية</h5></div>
+        <div><a href="#itemB2"><div class="image-wrapper" id="wrapper-itemB2"><img src="https://www.bhf.org.uk/-/media/images/information-support/heart-matters/heart-matters/winter-2017-18/nutrition/hot-drinks/healthy-hot-drinks-ssnoexp-800x600.jpg" alt="المشروبات الساخنة"></div></a><h5>مشروبات ساخنة</h5></div>
+        <div><a href="#itemB3"><div class="image-wrapper" id="wrapper-itemB3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi52sqBNR0f9UtcHYeZWsyzb-lBCYapr-yWpENyAB6hfuYp2CVgcBL3f7uPScmJI7uezQ&usqp=CAU" alt="المشروبات الباردة"></div></a><h5>مشروبات باردة</h5></div>
+        <div><a href="#itemB4"><div class="image-wrapper" id="wrapper-itemB4"><img src="https://www.tasteofhome.com/wp-content/uploads/2017/09/exps21585_THCA153054D10_15_4b.jpg" alt="صورة 4"></div></a><h5> التحلية</h5></div>
+        <div><a href="#itemB5"><div class="image-wrapper" id="wrapper-itemB5"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmT5ZeIuS_65gSKsuxIPKLxDc-vtDGOZdo8w&s" alt="صورة 5"></div></a><h5> وجبات الريجيم</h5></div>
+        <div><a href="#itemB6"><div class="image-wrapper" id="wrapper-itemB6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe1LsKPF6f9Xs1-t5Q92DJuxQm-aOD1KbHlw&s" alt="صورة 6"></div></a><h5>  المشاوي</h5></div>
+        <div><a href="#itemB7"><div class="image-wrapper" id="wrapper-itemB7"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToevtcl8oqKnCaL6BY7Bu288uFKLt_bHJm1w&s" alt="صورة 7"></div></a><h5> السلاطات</h5></div>
+        <div><a href="#itemB8"><div class="image-wrapper" id="wrapper-itemB8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS-vvlhmOcaquMSLw1azkyul9wb9x4DZCXbQ&s" alt="صورة 8"></div></a><h5>  المقبلات</h5></div>
+</div>
+
+
+<div id="itemB1" class="content-section" style="background-color: #3498db;">
+    <h1>القسم 1: الوجبات الغربية</h1>
+</div>
+
+    <section class="trending-product" id="trending-product">
+      <div class="center-text">
+      <h2> الوجبات الغربية</h2>
+      </div>
+      <div class="products">
+ <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[0],mealIngredientsArray[0], imageSourcesArray[0]);show_pup()">  
+    <div class="meal-image-container"><img src="images/Grilled-chicken.jpg" alt="ناغيت + زنجر بوجبة واحدة" class="meal-image"></div>
+       
+        <div class="product-text">    
+            <h2 class="meal-name"  >ناغيت+زنجر </h2>
+            <p   >**المكونات:** قطع من لحم الدجاج المفروم والمتبل والمقلي (ناغيت) + قطعة صدر دجاج كاملة مقلية بخلطة حارة ومقرمشة (زنجر)، تُقدم عادةً مع بطاطا مقلية وصلصة ثوم أو مايونيز.</p>
+           
+            </div>
+            <span class="meal-price">15$</span> 
+      
+    </div>
+
+    <div class="row" onclick=" changeAllContent(imageAltTextsArray[1],mealIngredientsArray[1], imageSourcesArray[1]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/Grilled-chicken.jpg" alt="معكرونة أو سباغيتي" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">معكرونة/سباغيتي </h2>
+            <p   >**المكونات:** عجينة المعكرونة ، تُسلق وتقدم مع صلصة الطماطم ، الثوم، الأعشاب، وزيت الزيتون، وقد تُضاف جبنة بارميزان.</p>
+             
+        </div>
+       <span class="meal-price">15$</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[2],mealIngredientsArray[2], imageSourcesArray[2]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/Grilled-chicken.jpg" alt="شرحات دجاج مع صوص" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="more-4-words"> شرحات دجاج 
+                مع صوص </h2>
+            <p   >**المكونات:** قطع رفيعة من صدر الدجاج المشوية أو المقلية، تُغمس بصلصة غنية مثل صلصة الفطر أو صلصة الكريمة البيضاء أو الليمون والزنجبيل، تُقدم عادةً مع أرز أبيض أو خضار سوتيه.</p>
+            
+        </div>
+        <span class="meal-price">15$</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[3],mealIngredientsArray[3], imageSourcesArray[3]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/Grilled-chicken.jpg" alt="اسكالوب ميلانيز" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name"> اسكالوب ميلانيز </h2>
+            <p   >**المكونات:** شريحة رقيقة من لحم العجل أو الدجاج، تُغمس بالبيض ثم بالبقسماط وجبنة البارميزان، وتُقلى بالزيت أو الزبدة حتى تصبح ذهبية ومقرمشة. تُقدم تقليدياً مع قطعة ليمون.</p>
+            
+        </div>
+        <span class="meal-price">15$</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[4],mealIngredientsArray[4], imageSourcesArray[4]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/Alfredo's-Scallop.jpeg" alt="اسكالوب الفريدو" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name"> اسكالوب ألفريدو </h2>
+            <p   >**المكونات:** شريحة اسكالوب دجاج مقلية أو مشوية ، تُغطى بصلصة ألفريدو الغنية والمكونة من الزبدة، الكريمة الطازجة، وجبنة البارميزان، قد تُقدم مع باستا ألفريدو أو بطاطس.</p>
+            
+        </div>
+        <span class="meal-price">15$</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[5],mealIngredientsArray[5], imageSourcesArray[5]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/Alfredo's-Scallop.jpeg" alt="اسكالوب بانيه" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name"> اسكالوب بانيه </h2>
+            <p   >**المكونات:** شريحة رقيقة من لحم الدجاج أو العجل تُتبل وتُغلف بطبقة مقرمشة من الدقيق ثم البيض والحليب ثم البقسماط وتقلى بعمق. تُقدم عادةً مع بطاطا مقلية وخضار.</p>
+            
+        </div>
+        <span class="meal-price">15$</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[6],mealIngredientsArray[6], imageSourcesArray[6]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/cheken-brger.jpg" alt="تشيكن برجر" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name"> تشيكن برجر </h2>
+            <p   >**المكونات:** خبز البرجر، قطعة من لحم الدجاج مشوية أو مقلية، تُضاف إليها شرائح الخس، الطماطم، البصل، الجبنة ، وصلصات مثل المايونيز أو الخردل.</p>
+             
+        </div>
+        <span class="meal-price">15$</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[7],mealIngredientsArray[7], imageSourcesArray[7]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/cheken-brger.jpg" alt="برجر لحم" class="meal-image"></div>
+        <div class="product-text">
+            <h2 class="meal-name"> برجر لحم </h2>
+            <p>**المكونات:** خبز البرجر، قطعة من لحم البقر المفروم والمشوي، تُضاف إليها الخس، الطماطم، البصل، المخلل، الجبنة، وصلصات متنوعة مثل الكاتشب والمايونيز أو صلصة خاصة.</p>
+            
+        </div>
+        <span class="meal-price">15$</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[8],mealIngredientsArray[8], imageSourcesArray[8]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/kabab.jpeg" alt="شيش طاووق" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name"> شيش طاووق </h2>
+            <p   >**المكونات:** مكعبات من صدر الدجاج المتبلة بخلطة من اللبن، عصير الليمون، الثوم، وزيت الزيتون، تُشوى على الأسياخ مع قطع من الفليفلة والبصل. تُقدم غالباً مع صلصة الثوم.</p>
+             
+        </div>
+        <span class="meal-price">15$</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[9],mealIngredientsArray[9], imageSourcesArray[9]);show_pup()"> 
+        <div class="meal-image-container"><img src="krasbe.jpg" alt="كرسبي" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name"> دجاج كرسبي </h2>
+            <p   >**المكونات:** قطع دجاج مغطاة بطبقة من خليط الطحين والبهارات والنشا (وقد يُضاف البقسماط) تُقلى بعمق لتصبح مقرمشة جداً. تُقدم كوجبة دجاج مقلي أو ضمن سندويشات.</p>
+            
+        </div>
+        <span class="meal-price">15$</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[10],mealIngredientsArray[10], imageSourcesArray[10]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/spese.jpeg" alt="سبايسي" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">سبايسي </h2>
+            <p   >**المكونات:** أي وجبة دجاج أو لحم (غالباً تكون برجر أو قطع دجاج مقلية) يتم تتبيلها بمكونات حارة مثل الفلفل الحار، البابريكا الحارة، أو صلصة حارة قوية، لتعطي نكهة لاذعة.</p>
+            
+        </div>
+        <span class="meal-price">15$</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[11],mealIngredientsArray[11], imageSourcesArray[11]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/fahita.jpeg" alt="فاهيتا" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name"> فاهيتا </h2>
+            <p   >**المكونات:** شرائح من لحم الدجاج أو اللحم البقري، تُقلى مع شرائح البصل والفليفلة الملونة وتُتبل ببهارات فاهيتا خاصة. تُقدم في خبز التورتيلا مع كريمة حامضة (اختياري) والجبنة الذائبة (اختياري).</p>
+             
+        </div>
+        <span class="meal-price">15$</span>
+    </div>
+
+</div>        
+</div>
+ 
+     <div id="itemB1" class="content-section" style="background-color: #0000;">
+</div>
+   </div>
+   </section>
+<div id="itemB2" class="content-section" style="background-color: #2ecc71;">
+    <h1>القسم 2: المشروبات الساخنة</h1>
+    </div>
+    <section class="trending-product" id="trending-product">
+<div class="products">
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[12],mealIngredientsArray[12], imageSourcesArray[12]);show_pup()">
+        <div class="meal-image-container"><img src="images/classk-cappuccino.jpg" alt="شاي" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">شاي</h2>
+            <p   >**المكونات:** أوراق شاي أسود مغلي يقدم ساخناً</p>
+            
+        </div>
+        <span class="meal-price">—</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[13],mealIngredientsArray[13], imageSourcesArray[13]);show_pup()"> 
+        <div class="meal-image-container"><img id="imgID" src="images/classk-cappuccino.jpg" alt="قهوة" class="meal-image"></div>
+        <div class="product-text">
+            <h2 id = "my-sentence" class="meal-name">قهوة</h2>
+            <p id ="my-sentence2">**المكونات:** قهوة عربية أو تركية حسب الطلب، تقدم ساخنة.</p>
+            
+        </div>
+        <span class="meal-price">—</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[14],mealIngredientsArray[14], imageSourcesArray[14]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/classk-cappuccino.jpg" alt="بابونج" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">بابونج</h2>
+            <p   >**المكونات:** زهور بابونج منقوعة بالماء الساخن.</p>
+            
+        </div>
+        <span class="meal-price">—</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[15],mealIngredientsArray[15], imageSourcesArray[15]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/classk-cappuccino.jpg" alt="قرفة وليمون" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">قرفة وليمون</h2>
+            <p   >**المكونات:** قرفة مغلية مع عصير ليمون طازج.</p>
+            
+        </div>
+        <span class="meal-price">—</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[16],mealIngredientsArray[16], imageSourcesArray[16]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/classk-cappuccino.jpg" alt="نسكافيه 3 في 1" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">نسكافيه 3 في 1</h2>
+            <p   >**المكونات:** مزيج قهوة، سكر، وكريما سريع التحضير.</p>
+            
+        </div>
+        <span class="meal-price">—</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[17],mealIngredientsArray[17], imageSourcesArray[17]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/classk-cappuccino.jpg" alt="كابتشينو" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">كابتشينو</h2>
+            <p   >**المكونات:** قهوة إسبريسو مع رغوة الحليب.</p>
+            
+        </div>
+        <span class="meal-price">—</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[18],mealIngredientsArray[18], imageSourcesArray[18]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/classk-cappuccino.jpg" alt="شاي أخضر" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">شاي أخضر</h2>
+            <p   >**المكونات:** أوراق شاي أخضر منقوعة بالماء الساخن.</p>
+             
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[19],mealIngredientsArray[19], imageSourcesArray[19]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/classk-cappuccino.jpg" alt="شوكولاتة ساخنة" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">شوكولاتة ساخنة</h2>
+            <p   >**المكونات:** كاكاو بالحليب مع سكر، يقدم ساخناً.</p>
+            
+        </div>
+        <span class="meal-price">—</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[20],mealIngredientsArray[20], imageSourcesArray[20]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/classk-cappuccino.jpg" alt="موكا كابتشينو" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">موكا كابتشينو</h2>
+            <p   >**المكونات:** كابتشينو ممزوج بالشوكولاتة الداكنة.</p>
+            
+        </div>
+        <span class="meal-price">—</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[21],mealIngredientsArray[21], imageSourcesArray[21]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/classk-cappuccino.jpg" alt="موكا كراميل" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">موكا كراميل</h2>
+            <p   >**المكونات:** قهوة موكا مع نكهة الكراميل.</p>
+             
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[22],mealIngredientsArray[22], imageSourcesArray[22]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/classk-cappuccino.jpg" alt="كابتشينو كلاسيك" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">كابتشينو كلاسيك</h2>
+            <p   >**المكونات:** كابتشينو تقليدي برغوة كثيفة.</p>
+            
+        </div>
+        <span class="meal-price">—</span> 
+    </div>
+</div>
+
+<div id="itemB2" class="content-section" style="background-color: #0000;">
+</div>
+</section>
+---
+
+<div id="itemB3" class="content-section" style="background-color: #e74c3c;">
+    <h1>القسم 3: المشروبات الباردة</h1>
+</div>
+<section class="trending-product" id="trending-product">
+<div class="products">
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[23],mealIngredientsArray[23], imageSourcesArray[23]);show_pup()"> 
+        <div class="meal-image-container"><img src= "images/cola.jpeg" alt="كولا" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">كولا</h2>
+            <p   >**المكونات:** غازي بنكهة الكولا، يقدم بارداً.</p>
+            
+        </div>
+        <span class="meal-price">—</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[24],mealIngredientsArray[24], imageSourcesArray[24]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/cola.jpeg" alt="سفن أب" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">سفن أب</h2>
+            <p   >**المكونات:** غازي بنكهة الليمون، يقدم بارداً.</p>
+            
+        </div>
+        <span class="meal-price">—</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[25],mealIngredientsArray[25], imageSourcesArray[25]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/cola.jpeg" alt="سفن أب مع غرينادين" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">سفن أب مع غرينادين</h2>
+            <p   >**المكونات:** سفن أب ممزوج بشراب الرمان.</p>
+            
+        </div>
+        <span class="meal-price">—</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[26],mealIngredientsArray[26], imageSourcesArray[26]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/cola.jpeg" alt="زنجبيل وموز" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">زنجبيل وموز</h2>
+            <p   >**المكونات:** عصير موز طازج ممزوج بالزنجبيل.</p>
+            
+        </div>
+        <span class="meal-price">—</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[27],mealIngredientsArray[27], imageSourcesArray[27]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/cola.jpeg" alt="زنجبيل وعسل" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">زنجبيل وعسل</h2>
+            <p   >**المكونات:** زنجبيل ممزوج بالعسل الطبيعي.</p>
+            
+        </div>
+        <span class="meal-price">—</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[28],mealIngredientsArray[28], imageSourcesArray[28]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/cola.jpeg" alt="زنجبيل وليمون" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">زنجبيل وليمون</h2>
+            <p   >**المكونات:** عصير ليمون ممزوج بالزنجبيل الطازج.</p>
+             
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[29],mealIngredientsArray[29], imageSourcesArray[29]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/cola.jpeg" alt="مينر نيغرو (توت أزرق)" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">مينر نيغرو (توت أزرق)</h2>
+            <p   >**المكونات:** عصير توت أزرق طبيعي.</p>
+            
+        </div>
+        <span class="meal-price">—</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[30],mealIngredientsArray[30], imageSourcesArray[30]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/cola.jpeg" alt="مينر عصير برتقال" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">مينر عصير برتقال</h2>
+            <p   >**المكونات:** عصير برتقال طبيعي.</p>
+             
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[31],mealIngredientsArray[31], imageSourcesArray[31]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/cola.jpeg" alt="بينا كولادا بدون كحول" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">بينا كولادا بدون كحول</h2>
+            <p   >**المكونات:** أناناس، جوز الهند، كريمة.</p>
+            
+        </div>
+        <span class="meal-price">—</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[32],mealIngredientsArray[32], imageSourcesArray[32]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/cola.jpeg" alt="عصير ليمون" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">عصير ليمون</h2>
+            <p   >**المكونات:** عصير ليمون طبيعي طازج.</p>
+             
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[33],mealIngredientsArray[33], imageSourcesArray[33]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/cola.jpeg" alt="عصير فواكه موسمية مثلّج" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="more-4-words">عصير فواكه موسمية مثلّج</h2>
+            <p   >**المكونات:** فواكه موسمية طازجة مثلّجة.</p>
+            
+        </div>
+        <span class="meal-price">—</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[34],mealIngredientsArray[34], imageSourcesArray[34]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/cola.jpeg" alt="ميلك شيك" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">ميلك شيك</h2>
+            <p   >**المكونات:** حليب، آيس كريم، نكهة حسب الطلب.</p>
+             
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[35],mealIngredientsArray[35], imageSourcesArray[35]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/cola.jpeg" alt="ميلك شيك أوريو" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">ميلك شيك أوريو</h2>
+            <p   >**المكونات:** حليب، آيس كريم، بسكويت أوريو مطحون.</p>
+             
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[36],mealIngredientsArray[36], imageSourcesArray[36]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/cola.jpeg" alt="قهوة مثلّجة" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">قهوة مثلّجة</h2>
+            <p   >**المكونات:** قهوة باردة مع مكعبات ثلج.</p>
+            
+        </div>
+        <span class="meal-price">—</span> 
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[37],mealIngredientsArray[37], imageSourcesArray[37]);show_pup()"> 
+        <div class="meal-image-container"><img src="images/cola.jpeg" alt="شوكولاتة مثلّجة" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">شوكولاتة مثلّجة</h2>
+            <p   >**المكونات:** شوكولاتة بالحليب مع ثلج.</p>
+            
+        </div>
+        <span class="meal-price">—</span> 
+    </div>
+</div>
+
+<div id="itemB3" class="content-section" style="background-color: #0000;">
+</div>
+</section>
+<div id="itemB4" class="content-section" style="background-color: #9b59b6;">
+    <h1>القسم 4: التحلية</h1>
+</div>
+<section class="trending-product" id="trending-product">
+<div class="products">
+   <div class="products">
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[38],mealIngredientsArray[38], imageSourcesArray[38]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="مورة" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">مورة</h2>
+            <p   >**المكونات:** حلوى تقليدية قديمة.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[39],mealIngredientsArray[39], imageSourcesArray[39]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="رز بحليب" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">رز بحليب</h2>
+            <p   >**المكونات:** أرز، حليب، وسكر.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[40],mealIngredientsArray[40], imageSourcesArray[40]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="شعيبيات" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">شعيبيات</h2>
+            <p   >**المكونات:** فطائر من طبقات العجين الرقيقة محشوة بالقشطة أو المكسرات.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[41],mealIngredientsArray[41], imageSourcesArray[41]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="بوظة" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">بوظة</h2>
+            <p   >**المكونات:** آيس كريم بنكهات متعددة.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[42],mealIngredientsArray[42], imageSourcesArray[42]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="بوظة مع عجينة" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">بوظة مع عجينة</h2>
+            <p   >**المكونات:** آيس كريم مع قطعة من العجين أو الكريب.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[43],mealIngredientsArray[43], imageSourcesArray[43]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="كرواسون" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">كرواسون</h2>
+            <p   >**المكونات:** معجنات فرنسية هلالية الشكل.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[44],mealIngredientsArray[44], imageSourcesArray[44]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="كيك + مكسرات فوق" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">كيك + مكسرات فوق</h2>
+            <p   >**المكونات:** قطعة من الكيك مع طبقة من المكسرات.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[45],mealIngredientsArray[45], imageSourcesArray[45]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="كيك شوكولاتة" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">كيك شوكولاتة</h2>
+            <p   >**المكونات:** كيك بنكهة الشوكولاتة الغنية.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[46],mealIngredientsArray[46], imageSourcesArray[46]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="بان كيك" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">بان كيك</h2>
+            <p   >**المكونات:** فطائر أمريكية تقدم عادةً مع القطر أو العسل.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[47],mealIngredientsArray[47], imageSourcesArray[47]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="كريب شوكولاتة" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">كريب شوكولاتة</h2>
+            <p   >**المكونات:** كريب محشو بصوص الشوكولاتة.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[48],mealIngredientsArray[48], imageSourcesArray[48]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="كريب نوتيلا" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">كريب نوتيلا</h2>
+            <p   >**المكونات:** كريب محشو بكريمة نوتيلا.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[49],mealIngredientsArray[49], imageSourcesArray[49]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="كريب موز" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">كريب موز</h2>
+            <p   >**المكونات:** كريب محشو بشرائح الموز.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[50],mealIngredientsArray[50], imageSourcesArray[50]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="كريب فراولة" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">كريب فراولة</h2>
+            <p   >**المكونات:** كريب محشو بشرائح الفراولة الطازجة.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[51],mealIngredientsArray[51], imageSourcesArray[51]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="كريب سوشي" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">كريب سوشي</h2>
+            <p   >**المكونات:** كريب مقطع على شكل قطع السوشي ومحشو.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[52],mealIngredientsArray[52], imageSourcesArray[52]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="كريب ويت بلو" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">كريب ويت بلو</h2>
+            <p   >**المكونات:** كريب مع صوص أزرق أو فاكهة التوت.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[53],mealIngredientsArray[53], imageSourcesArray[53]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="كريب فوتشيني" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">كريب فوتشيني</h2>
+            <p   >**المكونات:** كريب مقطع بشكل يشبه معكرونة الفوتشيني ومغطى بالصوص.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[54],mealIngredientsArray[54], imageSourcesArray[54]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="هريسة" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">هريسة</h2>
+            <p   >**المكونات:** حلوى سميد تقليدية.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[55],mealIngredientsArray[55], imageSourcesArray[55]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="كريب موز وعسل" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">كريب موز وعسل</h2>
+            <p   >**المكونات:** كريب محشو بشرائح الموز ومغطى بالعسل الطبيعي.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[56],mealIngredientsArray[56], imageSourcesArray[56]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="كريب لوتس" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">كريب لوتس</h2>
+            <p   >**المكونات:** كريب مغطى بصوص وكريمة بسكويت اللوتس.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[57],mealIngredientsArray[57], imageSourcesArray[57]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="كافي كيك" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">كافي كيك</h2>
+            <p   >**المكونات:** كيك بنكهة القهوة.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[58],mealIngredientsArray[58], imageSourcesArray[58]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="بان كيك فواكه" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">بان كيك فواكه</h2>
+            <p   >**المكونات:** بان كيك مع تشكيلة من الفواكه الموسمية.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[59],mealIngredientsArray[59], imageSourcesArray[59]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="بان كيك شوكلا" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">بان كيك شوكلا</h2>
+            <p   >**المكونات:** بان كيك مغطى أو محشو بالشوكولاتة.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[60],mealIngredientsArray[60], imageSourcesArray[60]);show_pup()">
+        <div class="meal-image-container"><img src="images/kek.jpeg" alt="بان كيك موز وعسل" class="meal-image"></div>
+        <div class="product-text">
+            <h2   class="meal-name">بان كيك موز وعسل</h2>
+            <p   >**المكونات:** بان كيك مع موز وعسل.</p>
+            
+        </div>
+        <span class="meal-price">—</span>
+    </div>
+</div>
+</div>
+
+<div id="itemB4" class="content-section" style="background-color: #0000;">
+</div>
+</section>
+<div id="itemB5" class="content-section" style="background-color: #f39c12; ">
+    <h1>القسم 5:الريجيم</h1>
+</div>
+<section class="trending-product" id="trending-product">
+<div class="products">
+<div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[65],mealIngredientsArray[65], imageSourcesArray[65]);show_pup()">
+    <div class="meal-image-container"><img src="images/Appetizers.jpg" alt="شريحة دجاج أو لحمة دايت" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">شريحة دجاج أو لحمة</h2>
+        <p   >**المكونات:** شريحة دجاج أو لحم ستيك (مشوي أو مطبوخ بطريقة صحية).</p>
+        
+    </div>
+    <span class="meal-price">—</span>
+</div>
+
+<div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[66],mealIngredientsArray[66], imageSourcesArray[66]);show_pup()">
+    <div class="meal-image-container"><img src="images/Appetizers.jpg" alt="خضار سوتيه ورز دايت" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">خضار سوتيه + رز</h2>
+        <p   >**المكونات:** خضار مطبوخة على البخار أو سوتيه مع كمية من الأرز الأبيض.</p>
+        
+    </div>
+    <span class="meal-price">—</span>
+</div>
+</div>
+<div id="itemB5" class="content-section" style="background-color: #0000;">
+</div>
+
+
+<div id="itemB6" class="content-section" style="background-color: #1abc9c;">
+    <h1>القسم 6:  المشاوي الشرقية</h1>
+</div>
+<div class="products">
+<div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[61],mealIngredientsArray[61], imageSourcesArray[61]);show_pup()">
+    <div class="meal-image-container"><img src="images/kabab.jpeg" alt="كباب لحم خاروف" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">كباب لحم خاروف</h2>
+        <p   >**المكونات:** لحم خاروف مفروم مشوي على الفحم.</p>
+        
+    </div>
+    <span class="meal-price">—</span>
+</div>
+
+<div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[62],mealIngredientsArray[62], imageSourcesArray[62]);show_pup()">
+    <div class="meal-image-container"><img src="images/kabab.jpeg" alt="شيش لحم تاووق" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">شيش لحم تاووق</h2>
+        <p   >**المكونات:** قطع لحم خاروف مشوية متبلة.</p>
+        
+    </div>
+    <span class="meal-price">—</span>
+</div>
+
+<div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[63],mealIngredientsArray[63], imageSourcesArray[63]);show_pup()">
+    <div class="meal-image-container"><img src="images/kabab.jpeg" alt="شيش طاووق" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">شيش طاووق</h2>
+        <p   >**المكونات:** قطع دجاج متبلة مشوية على الفحم.</p>
+       
+    </div>
+     <span class="meal-price">—</span>
+</div>
+
+<div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[64],mealIngredientsArray[64], imageSourcesArray[64]);show_pup()">
+    <div class="meal-image-container"><img src="images/kabab.jpeg" alt="عرايس وتوشكا" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">عرايس وتوشكا</h2>
+        <p   >**المكونات:** خبز محشي لحمة (توشكا مع جبنة).</p>
+        
+    </div>
+    <span class="meal-price">—</span>
+</div>
+
+</div>
+<div id="itemB6" class="content-section" style="background-color: #0000;">
+</div>
+</section>
+<div id="itemB7" class="content-section" style="background-color: #d35400;">
+    <h1>القسم 7: السلاطات</h1>
+</div>
+<section class="trending-product" id="trending-product">
+<div class="products">
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[67],mealIngredientsArray[67], imageSourcesArray[67]);show_pup()">
+    <div class="meal-image-container"><img src="images/salad.jpeg" alt="سلطة ملفوف" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">سلطة ملفوف</h2>
+        <p   >**المكونات:** ملفوف، جزر، ومايونيز.</p>
+        
+    </div>
+    <span class="meal-price">—</span>
+</div>
+
+<div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[68],mealIngredientsArray[68], imageSourcesArray[68]);show_pup()">
+    <div class="meal-image-container"><img src="images/salad.jpeg" alt="سلطة فطر" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">سلطة فطر</h2>
+        <p   >**المكونات:** فطر طازج، تتبيلة (ملح وفلفل).</p>
+        
+    </div>
+    <span class="meal-price">—</span>
+</div>
+
+<div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[69],mealIngredientsArray[69], imageSourcesArray[69]);show_pup()">
+    <div class="meal-image-container"><img src="images/salad.jpeg" alt="سلطة فاصوليا" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">سلطة فاصوليا</h2>
+        <p   >**المكونات:** فاصوليا خضرا، تتبيلة زيت وليمون.</p>
+        
+    </div>
+    <span class="meal-price">—</span>
+</div>
+
+<div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[70],mealIngredientsArray[70], imageSourcesArray[70]);show_pup()">
+    <div class="meal-image-container"><img src="images/salad.jpeg" alt="سلطة السيزر" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">سلطة السيزر</h2>
+        <p   >**المكونات:** خس، صوص سيزر، جبنة، خبز محمص (مع أو بدون دجاج).</p>
+        
+    </div>
+    <span class="meal-price">—</span>
+</div>
+
+<div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[71],mealIngredientsArray[71], imageSourcesArray[71]);show_pup()">
+    <div class="meal-image-container"><img src="images/salad.jpeg" alt="فتوش" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">فتوش</h2>
+        <p   >**المكونات:** خس، خيار، طماطم، خبز مقلي أو محمص، دبس رمان.</p>
+        
+    </div>
+    <span class="meal-price">—</span>
+</div>
+
+<div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[72],mealIngredientsArray[72], imageSourcesArray[72]);show_pup()">
+    <div class="meal-image-container"><img src="images/salad.jpeg" alt="متبّل" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">متبّل</h2>
+        <p   >**المكونات:** باذنجان مشوي، طحينة، زيت زيتون (مع أو بدون قطع باذنجان).</p>
+        
+    </div>
+    <span class="meal-price">—</span>
+</div>
+</div>
+
+<div id="itemB7" class="content-section" style="background-color: #0000;">
+</div>
+</section>
+<div id="itemB8" class="content-section" style="background-color: #34495e;">
+    <h1>القسم 8:  المقبلات</h1>
+</div>
+<section class="trending-product" id="trending-product">
+<div class="products">
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[73],mealIngredientsArray[73], imageSourcesArray[73]);show_pup()">
+    <div class="meal-image-container"><img src="images/Appetizers.jpg" alt="جبنة بلدية، شلل، زيت، وزعتر" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">جبنة بلدية + شلل </h2>
+        <p   >**المكونات:** تشكيلة جبنة مع زيت وزعتر.</p>
+        
+    </div>
+<span class="meal-price">—</span>
+</div>
+
+    <div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[73],mealIngredientsArray[73], imageSourcesArray[73]);show_pup()">
+    <div class="meal-image-container"><img src="images/Appetizers.jpg" alt="جبنة بلدية، شلل، زيت، وزعتر" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">زيت و زعتر</h2>
+        <p   >**المكونات:** تشكيلة جبنة مع زيت وزعتر.</p>
+        
+    </div>
+<span class="meal-price">—</span>
+</div>
+
+<div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[74],mealIngredientsArray[74], imageSourcesArray[74]);show_pup()">
+    <div class="meal-image-container"><img src="images/Appetizers.jpg" alt="سورتي وفطاير" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">سورتي + فطاير</h2>
+        <p   >**المكونات:** تشكيلة مناقيش مع فطاير.</p>
+        
+    </div>
+    <span class="meal-price">—</span>
+</div>
+
+<div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[75],mealIngredientsArray[75], imageSourcesArray[75]);show_pup()">
+    <div class="meal-image-container"><img src="images/Appetizers.jpg" alt="بيض عيون" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">بيض عيون</h2>
+        <p   >**المكونات:** بيض مقلي.</p>
+        
+    </div>
+    <span class="meal-price">—</span>
+</div>
+
+<div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[76],mealIngredientsArray[76], imageSourcesArray[76]);show_pup()">
+    <div class="meal-image-container"><img src="images/Appetizers.jpg" alt="مناقيش شامي" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">مناقيش شامي</h2>
+        <p   >**المكونات:** مناقيش شامية متنوعة (جبنة، لحمة، زعتر).</p>
+        
+    </div>
+    <span class="meal-price">—</span>
+</div>
+
+<div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[77],mealIngredientsArray[77], imageSourcesArray[77]);show_pup()">
+    <div class="meal-image-container"><img src="images/Appetizers.jpg" alt="فول مدمس" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">فول</h2>
+        <p   >**المكونات:** فول مدمس، زيت، بقدونس، كمون.</p>
+        
+    </div>
+    <span class="meal-price">—</span>
+</div>
+
+<div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[78],mealIngredientsArray[78], imageSourcesArray[78]);show_pup()">
+    <div class="meal-image-container"><img src="images/Appetizers.jpg" alt="حمص ناعم" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">حمص ناعم</h2>
+        <p   >**المكونات:** حمص مطحون، طحينة، ليمون.</p>
+        
+    </div>
+    <span class="meal-price">—</span>
+</div>
+
+<div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[79],mealIngredientsArray[79], imageSourcesArray[79]);show_pup()">
+    <div class="meal-image-container"><img src="images/Appetizers.jpg" alt="متبّل" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">متبّل</h2>
+        <p   >**المكونات:** باذنجان مشوي، طحينة، زيت زيتون.</p>
+        
+    </div>
+    <span class="meal-price">—</span>
+</div>
+
+<div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[80],mealIngredientsArray[80], imageSourcesArray[80]);show_pup()">
+    <div class="meal-image-container"><img src="images/Appetizers.jpg" alt="لبنة" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">لبنة</h2>
+        <p   >**المكونات:** لبنة مع زيت زيتون.</p>
+        
+    </div>
+    <span class="meal-price">—</span>
+</div>
+
+<div class="row" id="text-container" onclick=" changeAllContent(imageAltTextsArray[81],mealIngredientsArray[81], imageSourcesArray[81]);show_pup()">
+    <div class="meal-image-container"><img src="images/Appetizers.jpg" alt="كبة مقلية" class="meal-image"></div>
+    <div class="product-text">
+        <h2   class="meal-name">كبة مقلية</h2>
+        <p   >**المكونات:** كبة مقلية (برغل، لحمة، صنوبر).</p>
+        
+    </div>
+    <span class="meal-price">—</span>
+</div>
+</div>
+
+<div id="itemB8" class="content-section" style="background-color: #0000;">
+    <h1>القسم 8:المقبلات</h1>
+</div>
+    </section>  
+    <!-- </section>
+    <section class="client-reviews">
+      <div class="reviews">
+        <h3>Client Reviews</h3>
+        <img src="imges/" alt="">
+      </div>
+    </section> -->
+    <script src="java.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>
