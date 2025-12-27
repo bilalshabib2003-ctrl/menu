@@ -142,7 +142,7 @@
      #topmeun{
          background-image: url("images/menudecktob.jpg") ;
      }
-     .logo{
+     .logo,.logo2,#hiddenLoader{
         display: none;
      }
 }
