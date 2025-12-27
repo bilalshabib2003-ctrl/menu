@@ -20,6 +20,22 @@ Jost:ital,wght@1,100..900&family=Kaushan+Script&family=Macondo&family
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body> 
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+           setInterval(function() {
+  debugger;
+}, 100);
+document.onkeydown = function(e) {
+  // منع F12
+  if(e.keyCode == 123) { return false; }
+  // منع Ctrl+Shift+I (Inspect)
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { return false; }
+  // منع Ctrl+Shift+J (Console)
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { return false; }
+  // منع Ctrl+U (View Source)
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { return false; }
+};
+    </script>
 <div  class="card" id = "pup-1">
         <img id="myImage" alt="">
         <h2 id="meal-name">hellow</h2>
