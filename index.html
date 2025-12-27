@@ -975,21 +975,6 @@ Jost:ital,wght@1,100..900&family=Kaushan+Script&family=Macondo&family
     <script src="java.js"></script>
     <script src="data.js"></script>
     <script>
-  // 1. منع كبسة اليمين (الراحة النفسية)
-  document.addEventListener('contextmenu', event => event.preventDefault());
-
-  // 2. قفل أزرار الكيبورد (ممنوع الدخول من الأبواب الخلفية)
-  document.onkeydown = function(e) {
-    // منع F12، Ctrl+Shift+I، Ctrl+Shift+J، Ctrl+U
-    if(e.keyCode == 123 || 
-      (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'J'.charCodeAt(0))) || 
-      (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))) {
-      
-      alert("حاول مرة أخرى في كوكب آخر! 😉");
-      return false;
-    }
-  };
-
   // 3. فخ الـ Debugger (الجلطة الحقيقية)
   // هاد الكود بيخلي المتصفح يوقف ويجمد أول ما يفتحوا الـ Inspect
   (function() {
@@ -1002,22 +987,7 @@ Jost:ital,wght@1,100..900&family=Kaushan+Script&family=Macondo&family
     setInterval(_0x1b2c, 1000);
   })();
 
-  // 4. رسالة ترحيبية "مرعبة" بالـ Console
-  setInterval(() => {
-    console.clear();
-    console.log("%c⚠️ تحذير أمني ⚠️", "color: red; font-size: 40px; font-weight: bold; text-shadow: 2px 2px black;");
-    console.log("%cتم رصد محاولة اختراق.. جاري إرسال موقعك لشرطة البرمجة! 🚓", "color: yellow; font-size: 20px; background: black;");
-  }, 1000);
-</script>
 
-<style>
-  /* إضافة لمسة: منع تحديد النصوص عشان ما حدا ينسخ المحتوى */
-  body {
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none;    /* Firefox */
-    -ms-user-select: none;     /* IE/Edge */
-    user-select: none;         /* النسخة القياسية */
-  }
-</style>
+</script>
 </body>
 </html>
