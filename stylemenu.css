@@ -63,12 +63,6 @@
             height: 100%;
             object-fit: cover;
         }
-        /* #main-scrolling-container{
-            display: grid;
-            grid-template-columns: repeat(8,1fr);
-            justify-content: space-between;
-            text-align: center;
-        } */
         .scrolling-container h5 {
             
             font-size: 1.1em;
@@ -94,6 +88,8 @@
             margin-top: 15px;
         }
     #topmeun{
+       position: relative;
+        transition: opacity 1s ease-in-out; /* بتظهر بنعومة */
         display: flex;
         align-items: center; 
         justify-content: center; 
@@ -101,18 +97,33 @@
             width: 100%; 
             margin: 0px;
             margin-top: 5%;
-            background-image: url('images/topmenu.png');
+            background-image: url('images/topmenu2.jpg');
             background-size: 100% 100%; 
             background-repeat: no-repeat;
             background-position: top;
     }
-        .logo{
-     
+#hiddenLoader {
     position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    opacity: 0; /* البداية شفافة
+    transition: opacity 1.5s ease-in-out; /* طولت الوقت شوي لتبين الحركة أروق */
+    z-index: 1;
+} 
+
+#hiddenLoader.loaded {
+    opacity: 1; /* الظهور السحري */
+}
+    .logo{
+ position: absolute;
   /* هون بتحدد موقعه بالضبط */
   top: 10em;
   /* هي الخاصية بتحدد مين رح يكون فوق مين */
-  z-index: 1;   
+  z-index: 2;   
     }
     @media (min-width: 800px) {
 

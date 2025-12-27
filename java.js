@@ -138,7 +138,21 @@ function hide_pup(){
     // تشغيل الدالة أول مرة
 // fitTextToContainer(22,textElement); 
 // fitTextToContainer(18,textElement2); 
+// هي الدالة بتشتغل أول ما تفتح الصفحة
+function revealImage() {
+    const hiddenImg = document.getElementById('hiddenLoader');
+    if (hiddenImg) {
+        hiddenImg.classList.add('loaded');
+        console.log("تمت العملية بنجاح.. الكلاس انضاف!");
+    }
+}
 
+// منجرب نشغلها بكل الطرق الممكنة
+if (document.readyState === 'complete') {
+    revealImage();
+} else {
+    window.addEventListener('load', revealImage);
+}
 
 
 
