@@ -118,12 +118,24 @@
 #hiddenLoader.loaded {
     opacity: 1; /* الظهور السحري */
 }
-    .logo{
+    .logo {
  position: absolute;
   /* هون بتحدد موقعه بالضبط */
   top: 10em;
   /* هي الخاصية بتحدد مين رح يكون فوق مين */
-  z-index: 2;   
+  z-index: 2; 
+   opacity: 0;  
+    }
+    .logo2{
+  position: absolute;
+  /* هون بتحدد موقعه بالضبط */
+  top: 10em;
+  /* هي الخاصية بتحدد مين رح يكون فوق مين */
+  z-index: 2;  
+ 
+    }
+    .logo.loaded{
+    opacity: 1;
     }
     @media (min-width: 800px) {
 

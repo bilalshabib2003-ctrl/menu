@@ -141,8 +141,10 @@ function hide_pup(){
 // هي الدالة بتشتغل أول ما تفتح الصفحة
 function revealImage() {
     const hiddenImg = document.getElementById('hiddenLoader');
-    if (hiddenImg) {
+    const logo = document.querySelector('.logo');
+    if (hiddenImg && logo) {
         hiddenImg.classList.add('loaded');
+         logo.classList.add('loaded');
         console.log("تمت العملية بنجاح.. الكلاس انضاف!");
     }
 }
